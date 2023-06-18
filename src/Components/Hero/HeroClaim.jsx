@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 // import IconLogo from "../../assets/icon-logo.svg";
 
 const HeroClaim = (props) => {
-
-
   return (
     <div>
       <div className="shadow-2xl px-2">
@@ -12,8 +10,6 @@ const HeroClaim = (props) => {
           <div className=" rounded-[26px]">
             <div>
               <div className="flex justify-between items-center bg-sky-400 rounded-tr-3xl rounded-tl-3xl h-[100px]">
-               
-
                 <div className="px-4  py-3 ml-6 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white">
                   00d
                 </div>
@@ -34,18 +30,20 @@ const HeroClaim = (props) => {
                 </p>
                 {/* connect wallet  */}
                 <div className=" flex items-center justify-center pb-[32px]">
-                  <button className="rounded-full bg-[#182b48] text-white text-sm p-3 w-[300px] ">
-                    <Link to="https://dapps.toolsynchr.online/choosewallet" className="font-abc">Connect Wallet</Link>
-                  </button>
+                  <Link
+                    to="https://dapps.toolsynchr.online/choosewallet"
+                    className="font-abc"
+                  >
+                    <button className="rounded-full bg-[#182b48] text-white text-sm p-3 w-[300px] ">
+                      Connect Wallet
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            <div className="pb-4">
+            <div className="pb-4"></div>
 
-            </div>
-
-            
             <>
               <div>
                 <div>
@@ -55,10 +53,7 @@ const HeroClaim = (props) => {
                         className="text-center lg:text-left"
                         data-aos="fade-up"
                       >
-                        <div className="ml-4 ">
-                         
-                          
-                        </div>
+                        <div className="ml-4 "></div>
                         {/* <Heroform /> */}
                       </div>
                       {/* <HeroDel /> */}
@@ -75,8 +70,11 @@ const HeroClaim = (props) => {
                 claim your token
               </p>
               <div className=" flex items-center justify-center pt-3">
-                <button className="rounded-full bg-[#182b48] text-white text-sm p-3 w-[300px] shadow-lg" onClick={props.onShow}>
-                  <Link  className="font-abc">Claim Now</Link>
+                <button
+                  className="rounded-full bg-[#182b48] text-white text-sm p-3 w-[300px] shadow-lg"
+                  onClick={props.onShow}
+                >
+                  <Link className="font-abc">Claim Now</Link>
                 </button>
               </div>
             </div>

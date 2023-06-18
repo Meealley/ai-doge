@@ -13,7 +13,7 @@ const ConnectWallet = (props) => {
             <div className="flex flex-col absolute top-[50%] left-[50%] translate-x-[-2%] translate-y-[-30%] md:translate-x-[-30%] md:translate-y-[-30%] lg:translate-x-[-50%] lg:translate-y-[-50%] shadow-2xl">
               <div className="w-[320px] h-[284px] bg-gray-200 rounded-lg text-center">
                 <h1 className="text-xl font-abc font-bold text-[#535353] py-5">
-                  Buy now
+                 Claim now
                 </h1>
                 <div>
                   <button className="rounded-md w-[300px] bg-[#f1f4f6] pr-8 p-4 cursor-pointer">
