@@ -11,13 +11,13 @@ const HeroClaim = (props) => {
         <div className="bg-white rounded-3xl  max-w-[400px] h-[450px]">
           <div className=" rounded-[26px]">
             <div>
-              <div className="flex justify-between items-center bg-sky-400 rounded-tr-[30px] rounded-tl-[30px] h-[100px]">
+              <div className="flex justify-between items-center bg-sky-400 rounded-tr-3xl rounded-tl-3xl h-[100px]">
                
 
                 <div className="px-4  py-3 ml-6 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white">
                   00d
                 </div>
-                <div className="px-6 py-3 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white">
+                <div className="px-6 py-3 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white shadow-md">
                   00h
                 </div>
                 <div className="px-6 py-3 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white">
@@ -27,7 +27,7 @@ const HeroClaim = (props) => {
                   00s
                 </div>
               </div>
-              <div className="text-center block font-medium bg-gradient-to-b from-sky-400 to-[#182b48] mb-6 shadow-xl">
+              <div className="text-center px-[18px] block font-medium bg-gradient-to-b from-sky-400 to-[#182b48] mb-6 shadow-xl">
                 <p className="pb-6 text-[20px] font-semibold text-white font-abc">
                   Claim starts at 9AM UTC on June 19th. $AI will be listed on
                   MEXC and Uniswap
@@ -75,7 +75,7 @@ const HeroClaim = (props) => {
                 claim your token
               </p>
               <div className=" flex items-center justify-center pt-3">
-                <button className="rounded-full bg-[#182b48] text-white text-sm p-3 w-[300px]" onClick={props.onShow}>
+                <button className="rounded-full bg-[#182b48] text-white text-sm p-3 w-[300px] shadow-lg" onClick={props.onShow}>
                   <Link  className="font-abc">Claim Now</Link>
                 </button>
               </div>
