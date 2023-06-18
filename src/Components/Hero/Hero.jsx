@@ -25,11 +25,11 @@ const Hero = (props) => {
         </div>
         <div className="mx-[120px] mt-20">
           <div>
-            <div className="flex ">
-              <button className="md:justify-center mx-auto md:mt-10">
+            <div>
+              <button className="flex justify-center mx-auto md:mt-10">
                 <Link
                   to="https://aidoge.com/assets/documents/Aidoge_Whitepaper.pdf"
-                  className="border border-cyan-500 px-9 py-3 font-medium cursor-pointer text-lg text-white font-abc rounded-full text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-cyan-700"
+                  className="border-2 border-cyan-500 px-8 py-3 font-medium cursor-pointer text-lg text-white font-abc rounded-full text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-cyan-700"
                 >
                   WhitePaper
                 </Link>
