@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Hero from "../Hero/Hero";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import "./NavBar.css";
 
@@ -36,7 +36,7 @@ const NavBar = (props) => {
         >
           <div className=" px-4 mx-auto sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 p-5">
                 <a
                   href="/"
                   title=""
@@ -47,6 +47,7 @@ const NavBar = (props) => {
                     src="https://aidoge.com/assets/images/logo_web.png"
                     // src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/AiDoge_1684756904.webp"
                     alt=""
+                   
                   />
                 </a>
               </div>
@@ -57,23 +58,23 @@ const NavBar = (props) => {
                   type="button"
                   className="text-gray-900 transition delay-200 ease-in-out duration-200"
                 >
-                  {/* {toggelNav ? (
-                    // <FontAwesomeIcon
-                    //   icon={faXmark}
-                    //   className="text-3xl text-white"
-                    // />
+                  {toggelNav ? (
+                    <FontAwesomeIcon
+                      icon={faXmark}
+                      className="text-3xl text-white p-8"
+                    />
                   ) : (
                     <FontAwesomeIcon
                       icon={faBars}
                       className="w-7 h-7 text-white"
                     />
-                  )} */}
+                  )}
                 </button>
               </div>
 
-              <div className="hidden capitalize lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
+              <div id="#platform" className="hidden capitalize lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
                 <Link
-                  to="/find-a-card"
+                  to="/platform"
                   title=""
                   className="text-lg font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -82,7 +83,7 @@ const NavBar = (props) => {
                 </Link>
 
                 <Link
-                  to="/offers-and-promotions"
+                  to="/"
                   title=""
                   className="text-lg font-medium text-white shadow-xl transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -91,7 +92,7 @@ const NavBar = (props) => {
                 </Link>
 
                 <NavLink
-                  to="/ways-to-pay"
+                  to="/"
                   title=""
                   className="text-lg capitalize font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -100,7 +101,7 @@ const NavBar = (props) => {
                 </NavLink>
 
                 <NavLink
-                  to="/vision"
+                  to="/"
                   title=""
                   className="text-lg capitalize font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -109,7 +110,7 @@ const NavBar = (props) => {
                 </NavLink>
 
                 <NavLink
-                  to="/vision"
+                  to="/"
                   title=""
                   className="text-lg font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -117,7 +118,7 @@ const NavBar = (props) => {
                   airdrop
                 </NavLink>
                 <NavLink
-                  to="/vision"
+                  to="/"
                   title=""
                   className="text-lg uppercase font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -129,24 +130,30 @@ const NavBar = (props) => {
               {/* responsive one / */}
               {toggelNav ? (
                 <div
-                  className="block capitalize lg:hidden"
+                  className="block capitalize lg:hidden transition ease-in duration-5000"
                   onClick={handleToggle}
                 >
-                  <div className="flex flex-col bg-black text-black cursor-pointer text-left w-full h-85 items-start absolute lg:top-10 md:top-20 top-[60px] left-0 z-10  space-x-6 transition-all ease-in duration-500">
+                  <div className="flex flex-col bg-black text-white cursor-pointer text-left w-full h-85 items-start absolute lg:top-10 md:top-20 top-[60px] left-0 z-10  space-x-6 ">
                     <Link href="/"></Link>
-                    <Link to="/find-a-card" className="pt-8">
-                      find a card
+                    <Link to="#platform" className="pt-8">
+                      Platform
                     </Link>
-                    <Link to="/offers-and-promotions" className="pt-8">
-                      offers and promotions
+                    <Link to="#token" className="pt-8">
+                      $AI token
                     </Link>
-                    <Link to="/ways-to-pay" className="pt-8">
-                      ways to pay
+                    <Link to="#buy" className="pt-8">
+                      How To Buy
                     </Link>
                     <Link to="/vision" className="pt-8">
-                      vision
+                      RoadMap
                     </Link>
-                    <div className="my-8 flex justify-between">
+                    <Link to="/vision" className="pt-8">
+                      Airdrop
+                    </Link>
+                    <Link to="/vision" className="pt-8 pb-8">
+                      Faq
+                    </Link>
+                    {/* <div className="my-8 flex justify-between">
                       <div>
                         <Link to="/signIn" className="pt-8">
                           sign in
@@ -160,7 +167,7 @@ const NavBar = (props) => {
                           create account
                         </Link>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ) : null}
@@ -179,7 +186,7 @@ const NavBar = (props) => {
           </div>
         </header>
 
-        <Hero onShow={props.onShow}/>
+        <Hero onShow={props.onShow} />
       </div>
     </>
   );
