@@ -23,8 +23,8 @@ const Hero = (props) => {
           </div>
         </div>
         <div className="mt-16  px-4">
-          <div className="sm:block  lg:flex md:justify-between lg:justify-between ">
-            <div className="text-center pb-8">
+          <div className=" ">
+            <div className="text-center pb-8 sm:block  lg:flex md:justify-between lg:justify-between">
               <button className="sm:text-center lg:text-left md:mt-4 border-2 border-cyan-500 rounded-full py-2">
                 <Link
                   to="https://aidoge.com/assets/documents/Aidoge_Whitepaper.pdf"
@@ -36,7 +36,7 @@ const Hero = (props) => {
             </div>
 
             {/* social media  */}
-            <div className="flex mt-12 lg:mt-4">
+            <div className="flex mt-8 lg:mt-4 items-center justify-center">
               <div className="text-center">
                 <Link to="https://twitter.com/aidogecrypto" className="text-black">
                   {/* <FontAwesomeIcon icon={faTwitter} /> */}
