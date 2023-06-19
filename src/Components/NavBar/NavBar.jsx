@@ -34,12 +34,12 @@ const NavBar = (props) => {
           className={
             onScroll
               ? "navbar onScroll py-2 md:py-4 z-[1] fixed w-full top-0 "
-              : "py-2 md:py-6 z-[1] fixed top-0"
+              : "py-2 md:py-6 z-[1] fixed w-full top-0"
           }
         >
           <div className=" px-4 mx-auto sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
-              <div className="flex-shrink-0 p-5">
+              <div className=" p-5">
                 <a
                   href="/"
                   title=""
