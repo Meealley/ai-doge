@@ -78,9 +78,9 @@ const NavBar = (props) => {
               <div className="hidden capitalize lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
                 <Link
                   to="platform1"
-                  spy={true}
+                
                   smooth={true}
-                  offset={70}
+                  
                   duration={200}
                   title=""
                   className="text-lg font-medium text-white cursor-pointer transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
