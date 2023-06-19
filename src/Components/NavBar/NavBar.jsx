@@ -83,7 +83,7 @@ const NavBar = (props) => {
                 </Link>
 
                 <Link
-                  to="/"
+                  to="/token"
                   title=""
                   className="text-lg font-medium text-white shadow-xl transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -92,7 +92,7 @@ const NavBar = (props) => {
                 </Link>
 
                 <NavLink
-                  to="/"
+                  to="/buy"
                   title=""
                   className="text-lg capitalize font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -110,7 +110,7 @@ const NavBar = (props) => {
                 </NavLink>
 
                 <NavLink
-                  to="/"
+                  to="/airdrop"
                   title=""
                   className="text-lg font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -118,7 +118,7 @@ const NavBar = (props) => {
                   airdrop
                 </NavLink>
                 <NavLink
-                  to="/"
+                  to="/faq"
                   title=""
                   className="text-lg uppercase font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
@@ -147,10 +147,10 @@ const NavBar = (props) => {
                     <Link to="/vision" className="pt-8">
                       RoadMap
                     </Link>
-                    <Link to="/vision" className="pt-8">
+                    <Link to="#airdrop" className="pt-8">
                       Airdrop
                     </Link>
-                    <Link to="/vision" className="pt-8 pb-8">
+                    <Link to="#faq" className="pt-8 pb-8">
                       Faq
                     </Link>
                     {/* <div className="my-8 flex justify-between">
