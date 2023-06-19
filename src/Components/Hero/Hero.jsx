@@ -22,13 +22,13 @@ const Hero = (props) => {
             </div>
           </div>
         </div>
-        <div className="mt-20 px-4">
+        <div className="mt-16  px-4">
           <div className="sm:block  lg:flex md:justify-between lg:justify-between ">
-            <div className="text-center">
-              <button className="sm:text-center lg:text-left md:mt-8">
+            <div className="text-center pb-8">
+              <button className="sm:text-center lg:text-left md:mt-4">
                 <Link
                   to="https://aidoge.com/assets/documents/Aidoge_Whitepaper.pdf"
-                  className="border-2 border-cyan-500 px-8 py-3 font-medium cursor-pointer text-lg text-white font-abc rounded-full text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-cyan-700"
+                  className="border-2 border-cyan-500 px-8 py-2 font-medium cursor-pointer text-[13px] text-white font-abc rounded-full text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-cyan-700"
                 >
                   WhitePaper
                 </Link>
