@@ -3,7 +3,7 @@ import React from "react";
 const RoadMap = () => {
   return (
     <>
-      <section className="bg-[#000000] mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8">
+      <section className="bg-[#000000] mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8" id="roadmap">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-[#fff] text-center">
             <div className="flex justify-center">

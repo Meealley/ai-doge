@@ -8,7 +8,6 @@ const Platformprev = () => {
   return (
     <section
       className="pt-[20px] md:pt-[30px] lg:pt-[40px] rounded pb-20"
-      id="platform"
     >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div>

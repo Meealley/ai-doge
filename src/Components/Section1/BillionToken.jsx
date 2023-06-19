@@ -6,11 +6,11 @@ import Useairdrop from "../../assets/airdrop.svg";
 const BillionToken = () => {
   return (
     <>
-      <section className="bg-[#000000] mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8">
+      <section className="bg-[#000000] mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8" id="token">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="mb-20">
             <div>
-              <h1 className="text-[#fff] text-center text-[24px] font-abc font-extrabold">
+              <h1 className="text-[#fff] text-center text-[24px] lg:text-[48px] font-abc font-extrabold">
                 <span className="text-[#4acfff] font-abc">$AI</span> 50 billion
                 Token <span className="text-[#4acfff] font-abc"> Airdrop</span>
               </h1>

@@ -6,7 +6,7 @@ import UseCard from "../../assets/card_how.svg";
 const HowtoBuy = () => {
   return (
     <>
-      <section className="bg-[#000000] mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8">
+      <section className="bg-[#000000] mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8" id="buy">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center text-[#fff] pb-[25px]">
             <h1 className="font-abc text-[24px] md:text-[35px] lg:text-[50px] font-extrabold">

@@ -3,7 +3,7 @@ import React from "react";
 const Section1 = () => {
   return (
     <>
-      <section className=" bg-black mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8">
+      <section className=" bg-black mt-12 sm:mt-6 pt-12 pb-12 sm:pb-16 lg:pt-8" id="platform1">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div>
             <div className="pt-10 uppercase text-center">

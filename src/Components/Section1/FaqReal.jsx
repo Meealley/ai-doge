@@ -5,7 +5,7 @@ import Faq from "./Faq";
 const FaqReal = () => {
   return (
     <>
-      <section className=" pt-12 pb-12 sm:pb-16 lg:pt-8 bg-[#000000]">
+      <section className=" pt-12 pb-12 sm:pb-16 lg:pt-8 bg-[#000000]" id="faq">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16 bg-[#000000]">
             {/* Section Images */}

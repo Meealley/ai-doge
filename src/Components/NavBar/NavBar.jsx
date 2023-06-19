@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Hero from "../Hero/Hero";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link, NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./NavBar.css";
 
 const NavBar = (props) => {
@@ -27,11 +28,13 @@ const NavBar = (props) => {
   return (
     <>
       <div className="bg-bg-image bg-no-repeat bg-cover h-screen">
+
+        {/* header with the onScroll  */}
         <header
           className={
             onScroll
-              ? "navbar onScroll py-2 md:py-4 z-[1] sticky top-0 "
-              : "py-2 md:py-6 z-[1] sticky top-0"
+              ? "navbar onScroll py-2 md:py-4 z-[1] fixed w-full top-0 "
+              : "py-2 md:py-6 z-[1] fixed top-0"
           }
         >
           <div className=" px-4 mx-auto sm:px-6 lg:px-8">
@@ -47,16 +50,16 @@ const NavBar = (props) => {
                     src="https://aidoge.com/assets/images/logo_web.png"
                     // src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/AiDoge_1684756904.webp"
                     alt=""
-                   
                   />
                 </a>
               </div>
 
-              <div className="flex lg:hidden absolute right-4 md:right-20  pl-32 ">
+              {/* Hamburger menu with fontawesome  */}
+              <div className="flex lg:hidden absolute right-[14px] md:right-20  pl-32 ">
                 <button
                   onClick={handleToggle}
                   type="button"
-                  className="text-gray-900 transition delay-200 ease-in-out duration-200"
+                  className="text-gray-900 transition ease-in duration-5000"
                 >
                   {toggelNav ? (
                     <FontAwesomeIcon
@@ -72,59 +75,63 @@ const NavBar = (props) => {
                 </button>
               </div>
 
-              <div id="#platform" className="hidden capitalize lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
+              <div className="hidden capitalize lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
                 <Link
-                  to="/platform"
+                  to="platform1"
+                  spy={true}
+                  smooth={true}
+                  offset={70}
+                  duration={200}
                   title=""
-                  className="text-lg font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
+                  className="text-lg font-medium text-white cursor-pointer transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
                   {" "}
                   Platform
                 </Link>
 
                 <Link
-                  to="/token"
+                  to="token"
                   title=""
-                  className="text-lg font-medium text-white shadow-xl transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
+                  className="text-lg font-medium cursor-pointer text-white shadow-xl transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
                   {" "}
                   $AI Token
                 </Link>
 
-                <NavLink
-                  to="/buy"
+                <Link
+                  to="buy"
                   title=""
-                  className="text-lg capitalize font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
+                  className="text-lg capitalize font-medium cursor-pointer text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
                   {" "}
                   how to buy
-                </NavLink>
+                </Link>
 
-                <NavLink
-                  to="/"
+                <Link
+                  to="roadmap"
                   title=""
-                  className="text-lg capitalize font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
+                  className="text-lg capitalize font-medium cursor-pointer text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
                   {" "}
                   roadmap
-                </NavLink>
+                </Link>
 
-                <NavLink
-                  to="/airdrop"
+                <Link
+                  to="airdrop"
                   title=""
-                  className="text-lg font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
+                  className="text-lg font-medium text-white cursor-pointer transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
                   {" "}
                   airdrop
-                </NavLink>
-                <NavLink
-                  to="/faq"
+                </Link>
+                <Link
+                  to="faq"
                   title=""
-                  className="text-lg uppercase font-medium text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
+                  className="text-lg uppercase font-medium cursor-pointer text-white transition-all text-shadow duration-200 rounded focus:outline-none font-pj hover:text-opacity-50"
                 >
                   {" "}
                   faq
-                </NavLink>
+                </Link>
               </div>
 
               {/* responsive one / */}
@@ -135,22 +142,22 @@ const NavBar = (props) => {
                 >
                   <div className="flex flex-col bg-black text-white cursor-pointer text-left w-full h-85 items-start absolute lg:top-10 md:top-20 top-[60px] left-0 z-10  space-x-6 ">
                     <Link href="/"></Link>
-                    <Link to="#platform" className="pt-8">
+                    <Link to="platform" className="pt-8 cursor-pointer">
                       Platform
                     </Link>
-                    <Link to="#token" className="pt-8">
+                    <Link to="token" className="pt-8 cursor-pointer">
                       $AI token
                     </Link>
-                    <Link to="#buy" className="pt-8">
+                    <Link to="buy" className="pt-8 cursor-pointer">
                       How To Buy
                     </Link>
-                    <Link to="/vision" className="pt-8">
+                    <Link to="roadmap" className="pt-8 cursor-pointer">
                       RoadMap
                     </Link>
-                    <Link to="#airdrop" className="pt-8">
+                    <Link to="airdrop" className="pt-8 cursor-pointer">
                       Airdrop
                     </Link>
-                    <Link to="#faq" className="pt-8 pb-8">
+                    <Link to="faq" className="pt-8 pb-8 cursor-pointer">
                       Faq
                     </Link>
                     {/* <div className="my-8 flex justify-between">
