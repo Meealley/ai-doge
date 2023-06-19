@@ -2,7 +2,6 @@ import React from "react";
 import HeroClaim from "./HeroClaim";
 import { Link } from "react-router-dom";
 
-
 const Hero = (props) => {
   return (
     <>
@@ -23,10 +22,10 @@ const Hero = (props) => {
             </div>
           </div>
         </div>
-        <div className="mx-[120px] mt-20">
-          <div>
-            <div>
-              <button className="flex justify-center mx-auto md:mt-10">
+        <div className="mt-20 px-4">
+          <div className="sm:block  lg:flex md:justify-between lg:justify-between ">
+            <div className="text-center">
+              <button className="sm:text-center lg:text-left md:mt-8">
                 <Link
                   to="https://aidoge.com/assets/documents/Aidoge_Whitepaper.pdf"
                   className="border-2 border-cyan-500 px-8 py-3 font-medium cursor-pointer text-lg text-white font-abc rounded-full text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 to-cyan-700"
@@ -37,11 +36,53 @@ const Hero = (props) => {
             </div>
 
             {/* social media  */}
-            <div className="">
-              <Link className="text-black">
-                {/* <FontAwesomeIcon icon={faTwitter} /> */}
-                
-              </Link>
+            <div className="flex mt-12 lg:mt-4">
+              <div className="text-center">
+                <Link to="https://twitter.com/aidogecrypto" className="text-black">
+                  {/* <FontAwesomeIcon icon={faTwitter} /> */}
+                  <img
+                    src="https://aidoge.com/assets/images/svg-icons/social-twitter.svg"
+                    alt="twitter"
+                    className="w-12 h-8"
+                  />
+                </Link>
+              </div>
+              <div >
+                <Link to="https://www.instagram.com/aidogecrypto/">
+                  <img
+                    src="https://aidoge.com/assets/images/svg-icons/social-instagram.svg"
+                    alt="instagram"
+                    className="w-12 h-8"
+                  />
+                </Link>
+              </div>
+              <div >
+                <Link to="https://discord.com/invite/QE5PdhbjUY">
+                  <img
+                    src="https://aidoge.com/assets/images/svg-icons/social-discord.svg"
+                    alt="discord"
+                    className="w-12 h-8"
+                  />
+                </Link>
+              </div>
+              <div >
+                <Link to="https://t.me/AiDogeCryptoOfficial">
+                  <img
+                    src="https://aidoge.com/assets/images/svg-icons/social-telegram.svg"
+                    alt="telegram"
+                    className="w-12 h-8"
+                  />
+                </Link>
+              </div>
+              <div >
+                <Link to="https://www.tiktok.com/@aidogecrypto">
+                  <img
+                    src="https://aidoge.com/assets/images/svg-icons/social-tiktok.svg"
+                    alt="tiktok"
+                    className="w-12 h-8"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

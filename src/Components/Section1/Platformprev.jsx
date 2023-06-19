@@ -1,5 +1,9 @@
 import React from "react";
-import SwiperImages from "./SwiperImages";
+// import SwiperImages from "./SwiperImages";
+import IconLogo from "../../assets/icon-logo.svg";
+
+import Images1 from "../../assets/slide-1.png";
+
 
 const Platformprev = () => {
   return (
@@ -27,7 +31,18 @@ const Platformprev = () => {
               </div>
             </div>
           </div>
-          <SwiperImages />
+          {/* <SwiperImages /> */}
+          <div className="relative">
+            <img
+              className="rounded-[28px] contain border-[5px] border-cyan-500 w-[21rem] lg:w-[80rem] lg:h-[28rem] max-w-[700px] mx-auto"
+              src={Images1}
+              alt=""
+            />
+            {/* Icon logo at the top left corner */}
+            <div className="absolute top-0 left-0 flex lg:hidden items-center justify-center w-12 h-12 bg-blue-500 rounded-full">
+              <img src={IconLogo} alt="icon" />
+            </div>
+          </div>
         </div>
       </section>
     </div>
