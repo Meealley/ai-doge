@@ -10,16 +10,16 @@ const HeroClaim = (props) => {
           <div className=" rounded-[26px]">
             <div>
               <div className="flex justify-between items-center bg-sky-400 rounded-tr-3xl rounded-tl-3xl h-[100px]">
-                <div className="px-4  py-3 ml-6 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white">
+                <div className="px-4  py-3 ml-6 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white shadow-sm">
                   00d
                 </div>
-                <div className="px-6 py-3 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white shadow-md">
+                <div className="px-6 py-3 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white shadow-sm">
                   00h
                 </div>
-                <div className="px-6 py-3 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white">
+                <div className="px-6 py-3 mt-2 rounded-md bg-[#ffffff33] font-abc font-bold text-white shadow-sm">
                   00m
                 </div>
-                <div className="px-6 py-3  mt-2 rounded-md bg-[#ffffff33] mr-6 font-abc font-bold text-white">
+                <div className="px-6 py-3  mt-2 rounded-md bg-[#ffffff33] mr-6 font-abc font-bold text-white shadow-sm">
                   00s
                 </div>
               </div>
